@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body{ font-family: Arial; padding: 20px;}
+        .np{
+            font-size: 28px;
+            text-align: center;
+        }
+        .ll{
+            font-size: 25px;
+            margin-top: 30px;
+        }
+        .red-box{
+            border: 2px solid #ff6b6b;
+            padding: 30px;
+        }
+        .blue-box{
+            border: 2px solid #00bcd4;
+            padding: 20px;
+        }
+        .ac{
+            text-align: center;
+            border: 2px solid #4caf50;
+            padding: 15px;
+        }
+        .po{
+            text-align: center;
+            color: #8aa0b8;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .ai, .ew, .dy{
+            padding: 17px;
+            background: #e3f2fd;
+            margin-bottom: 10px;
+        }
+        .ai{ margin: 10px; background-color: antiquewhite; }
+        .ew{ margin: 20px 10px; background-color: #566675; }
+        .dy{ margin: 10px 20px 30px 40px; background-color: rgb(194, 194, 184);}
+        
+        .cx, .ks, .tb{
+            background: #fff3e0;
+            border: 2px solid #ff9800;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #7dabb1;
+        }
+        .cx{ padding: 10px; background-color: antiquewhite;}
+        .ks{ padding: 20px 10px; background-color: #8aa0b8; border: solid#2196f3;}
+        .tb{ padding: 10px 20px 30px 40px; background-color: #7dabb1; border: solid gray; }
+        .fg{
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .zz{ border: 2px solid #f28b9d; background: #fce4ec; padding: 15px; width: 200px; box-sizing: content-box; border-width: 6px; }
+        .lp{ border: 2px solid #81c784; background: #e8f5e9; padding: 15px; width: 200px; box-sizing: border-box;  border-width: 6px; }
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <h2 class="np">CSS Box Model</h2>
+
+    <h3 class="ll">Understanding the Box Model</h3>
+    <div>
+       <div class="red-box">
+        <div class="blue-box">
+         <div class="ac">Content Area</div>
+         <div class="po">Green:Content|Blue: padding | Red:Border |Outside: Margin</div>
+     </div>
+    </div>
+    <hr/>
+    <h3 class="tt">Margin Examples</h3>
+    <div>
+<div class="ai">Margin: 10px (all sides)</div>
+<div class="ew">Margin: 20px (top/bottom) 10px (left/right)</div>
+<div class="dy">Margin: 10px(top) 20px(right) 30px(bottom) 40px(left)</div>
+<hr/>
+    </div>
+<div>
+    <h3 class="xc">Padding Examples</h3>
+    <div class="cx">Padding: 10px (all sides)</div>
+    <div class="ks">Padding: 20px (top/bottom) 10px (left/right)</div>
+    <div class="tb">Padding: 10px(top) 20px(right) 30px(bottom) 40px(left)</div>
+    <hr/>
+</div>
+</div>
+    <h3 class="fg">Box-Sizing Property</h3>
+    <div style=" display: flex; gap: 20px;">
+      <div class="zz">
+       <strong>content-box</strong><br>
+         width: 200px +<br>
+         padding + border<br>
+         Total: 200 + 40 +<br>
+         10 =250px
+      </div>
+
+    <div class="lp">
+        <strong>border-box</strong><br>
+        width: 200px<br>
+        includes padding<br>
+        & border<br>
+        content: 200 -<br>
+        40 - 10 =150px
+    </div>
+</div>
+<hr/>
+</div>
+
+<div>
+    <h3>Display Property</h3>
+    <span style="display:inline; background: #ffcdd2; border: 1px solid #e57373; padding: 5px;">Inline Element 1</span>
+    <span style=" display:inline; background: #c8e6c9; border: 1px solid #81c784; padding: 5px;">Inline Element 2</span>
+    <span style=" display:inline; background: #b3e5fc; border: 1px solid #81d4fa; padding: 5px;">Inline Element 3</span>
+    <div style="display: block; background: #e0f7fa; border: 1px solid #4dd0e1; padding: 10px; margin-top: 10px;">Block Element - takes full width</div>
+    <div style="display: block; background: #f3e5f5; border: 1px solid #ba68c8; padding: 10px; margin-top: 10px;">Another Block Element</div>
+    <div style="display: inline-block; background: #fff8e1; border: 1px solid #ffd54f; padding: 15px; width: 130px; margin: 5px;">Inline-Block 1</div>
+    <div style="display: inline-block; background: #e8eaf6; border: 1px solid #7986cb; padding: 15px; width: 130px; margin: 5px;">Inline-Block 2</div>
+    <div style="display: inline-block; background: #fff8e1; border: 1px solid #ffd54f; padding: 15px; width: 130px; margin: 5px;">Inline-Block 3</div>
+<hr/>
+</div>
+<div style="border: 2px solid #e0e0e0; padding: 25px; margin: 20px 0; background: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(red, green, blue, alpha); max-width: 600px;">
+<h3>Practical Example</h3>
+<h4>Card Component</h4>
+<p>This Card demonstrates box model properties:</p>
+ <ul>
+    <li>Margin: Creates space around the card </li>
+    <li>Border: Defines the card boundary</li>
+    <li>Padding: Creates space inside the card</li>
+    <li>Content: The actual text and elements</li>
+ </ul>
+  <p style="background: #f5f5f5; padding: 10px; text-align: center; border-radius: 5px; margin-top: 15px;">Total width = margin + border + padding + content</p>
+  <p style="text-align: center; color: #9e9e9e; font-style: italic; margin-top: 20px; font-size: 17px;">Master the box model to precisely control layout and spacing<br>in your designs!</p>
+</div>
+
+
+</body>
+</html>

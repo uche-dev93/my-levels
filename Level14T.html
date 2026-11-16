@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margins & Padding Demonstration</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="border bg-white mx-15 my-3">
+        <h1 class="font-bold py-6 text-[30px] pl-4">CSS Margins & Padding Demonstration</h1>
+        <div class="bg-blue-200 border ml-5 mr-5 mb-3">
+            <h2 class="font-bold py-4 text-[22px] pl-3 ">Standard Box</h2>
+            <p class="py-1 pl-2">This box has standard margin (10px) and padding (15px).</p>
+            <p class="pb-5 pl-2">Margin creates space outside the border, padding creates space inside.</p>
+        </div>
+        <div class="border bg-blue-200 ml-3 mr-3 mb-3">
+            <h2 class="font-bold py-4 pl-2 text-[22px]">No Margin Box</h2>
+            <p class="pl-2 pb-5">This box has margin: 0 but normal padding.</p>
+        </div>
+        <div class="border bg-blue-200 mx-6 py-4 mb-5">
+            <h2 class="font-bold text-[22px]">No Padding Box</h2>
+            <p>This box has padding: 0 but normal margin.</p>
+        </div>
+        <div class="border bg-blue-200 mx-8 py-8 m-30px px-3 mb-5">
+            <h2 class="font-bold text-[22px]">Large Margin Box</h2>
+            <p class="p-1">This box has margin: 30px creating more outside space.</p>
+        </div>
+        <div class="border bg-blue-200 p-8 ml-5 mr-5 mb-4">
+            <h2 class="font-bold p-2 text-[22px]">Large Padding Box</h2>
+            <p>This box has padding:30px creating more inside</p
+                >
+        </div>
+        <div class="border bg-blue-200 mb-3 py-5 ml-8 pl-3 mr-8">
+            <h2 class="font-bold text-[22px]">Different Margins (Top/Bottom vs Left/Right)</h2>
+            <p class="p-2">This box has margin: 5px 20px (5px top/bottom, 20px left/right).</p>
+        </div>
+        <div class="border bg-blue-200 py-6 m-6 pl-3">
+            <h2 class="font-bold text-[22px]">Different Paddings (Top/Bottom vs Left/Right)</h2>
+            <p class="p-2">This box has padding: 5px 25px (5px top/bottom, 25px left/right).</p>
+        </div>
+        <div class="border bg-blue-200 mb-3 ml-7 mr-5 pl-4 py-8">
+            <h2 class="font-bold text-[22px]">Four Value Margin</h2>
+            <p>This box has margin: 5px 10px 15px 20px(top: 5px, right: 10px, bottom: 15px, left: 20px)</p>
+        </div>
+        <div class="border bg-blue-200 py-6 ml-8 mr-5 pl-4 mb-3">
+            <h2 class="font-bold text-[22px]">Four Value Padding</h2>
+            <p>This box has padding: 10px 20px 30px 40px(top: 10px, right: 20px, bottom: 30px, left: 40px)</p>
+        </div>
+        <div class="border items-center bg-blue-200 mb-3 py-8 pl-4 mr-30 ml-30">
+            <h2 class="font-bold text-[22px]">Auto Margin for Centering</h2>
+            <p>This box has margin: 20px auto and width: 50%</p>
+            <p>Auto margin centers the element horizontally.</p>
+        </div>
+        <div class="border bg-blue-200 py-6 pl-3 mb-3 pr-3 mr-5 ml-5">
+            <h2 class="font-bold text-[22px]">Nested Boxes</h2>
+            <p class="p-3">Outer box with normal margin/padding containing inner boxes:</p>
+            <p class="border bg-green-300 p-4 mb-2">First nested box with its own margin and padding</p>
+            <p class="border bg-green-300 p-4">First nested box with its own margin and padding</p>
+        </div>
+        <div class="border bg-blue-200 p-5 mr-6 ml-6">
+            <h2 class="font-bold text-[22px]">Inline Element Demo</h2>
+            <p>This is a paragraph with inline elements that have margin and padding. Notice how margin works differently on inline elements.</p>
+        </div>
+        <div class="border bg-pink-400 mr-3 ml-3 p-3 mb-3">
+            <h2 class="font-bold text-[22px]">Negative Margin</h2>
+            <p>This box has margin: -10px which pulls it closer to surrounding elements.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

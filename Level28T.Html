@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div>
+        <div class="flex flex-col pt-3 h-[103px] item-center text-[white] bg-stone-800">
+            <h1 class="text-[33px] font-bold text-center">Grid Layout Website</h1>
+            <p class="text-[17px]">Using CSS Grid for complete page layout</p>
+        </div>
+        <div class="flex">
+            <div class="flex flex-col pt-3 bg-gray-100 h-125 w-50">
+                <h1 class="font-bold text-[20px] pb-2 pl-4 mb-3">Navigation</h1>
+                <ul class="list-none flex flex-col gap-6">
+                    <li><a href="#" class="bg-gray-200 pt-2.5 pb-2.5 pl-2 pr-28 ml-4 hover:bg-gray-300">Home</a></li>
+                    <li><a href="#" class="bg-gray-200 pt-2.5 pb-2.5 pl-2 pr-28 ml-4 hover:bg-gray-300">About</a></li>
+                    <li><a href="#" class="bg-gray-200 pt-2.5 pb-2.5 pl-2 pr-25 ml-4 hover:bg-gray-300">Services</a></li>
+                    <li><a href="#" class="bg-gray-200 pt-2.5 pb-2.5 pl-2 pr-24.5 ml-4 hover:bg-gray-300">Portfolio</a></li>
+                    <li><a href="#" class="bg-gray-200 pt-2.5 pb-2.5 pl-2 pr-26 ml-4 hover:bg-gray-300">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col mt-5">
+                <div class="border-l-[4px] mb-7 h-21 bg-gray-100 ml-5 w-190 border-l-[blue] p-[10px] border-l-[solid]">
+                    <h2 class="text-[24px] font-bold pl-1">Main Content Area</h2>
+                    <p class="pl-1">This is the main content section of the website. it contains the primary information and features </p>
+                </div>
+                <div class="border-l-[4px] mb-7 h-21 bg-gray-100 ml-5 w-190 border-l-[blue] border-l-[solid] p-[10px]">
+                    <h2 class="text-[20px] font-bold pl-1">Featured Articles</h2>
+                    <p class="pl-1">Grid layout provides excellent control over the placement and alignment of elements on the pages.</p>
+                </div>
+                <div class="border-l-[4px] mb-7 h-21 bg-gray-100 ml-5 w-190 border-l-[blue] border-l-[solid] p-[10px]">
+                    <h2 class="pl-1 font-bold text-[20px]">Recent Updates</h2>
+                    <p class="pl-1">Using grid-template-areas makes it easy to visualize and manage the layout structure.</p>
+                </div>
+            </div>
+            <div class="bg-gray-100 h-125 w-70 ml-5">
+                <div class="bg-[white] h-35 rounded-[10px] w-60 ml-5 mt-5 shadow-lg">
+                    <h3 class="pt-3 pb-1 pl-4 text-[17px] font-bold">Sidebar Widget</h3>
+                    <div class="border-b-[2px] w-52 ml-4 border-b-[solid] border-b-[blue]"></div>
+                    <p class="pl-4 pt-2 text-[15px]">Additional content and features can be placed in the sidebar area.</p>
+                </div>
+                <div class="bg-[white] h-35 rounded-[10px] w-60 ml-5 mt-5 shadow-lg">
+                    <h2 class="pt-3 pb-1 pl-4 text-[17px] font-bold">Recent Posts</h2>
+                    <div class="border-b-[blue] border-b-[solid] ml-4 w-52 border-b-[2px]"></div>
+                    <p class="pl-4 pt-2 text-[17px]">Latest updates and nes items appear here in the sidebar.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <form class="bg-white p-8 rounded shadow-md h-[975px] rounded-[7px] mt-5 mb-8 w-[80%]">
+            <h1 class="text-center font-bold mb-6 text-[35px]">Registration form</h1>
+            <div class="mb-4">
+                <fieldset class="border border-gray-300 p-4 rounded">
+                    <legend class="text-lg font-semibold">Personal Information</legend>
+                    <div class="mb-4">
+                        <label for="name" class="block font-medium mb-2">Full Name:</label>
+                        <input type="text" placeholder="Enter your full name" class="w-full border border-gray-300 p-1 rounded" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block font-medium mb-2">Email Address:</label>
+                        <input type="email" placeholder="Enter your email" class="w-full border border-gray-300 p-1 rounded required">
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="block font-medium mb-2">Password:</label>
+                        <input type="password" placeholder="Create a password" class="w-full border border-gray-300 p-1 rounded required">
+                    </div>
+                </fieldset>
+            </div>
+                <fieldset class="border mb-8 border-gray-300 p-4 rounded">
+                    <legend class="text-lg font-semibold">Additional Information</legend>
+                    <div class="mb-4">
+                        <label for="Biography" class="block font-medium mb-4">Biography:</label>
+                        <textarea id="Biography" placeholder="Tell us about yourself" class="w-full border border-gray-300 p-2 rounded" rows="5"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block font-bold mb-2">Country:</label>
+                        <select class="w-full border text-[14px] border-gray-300 p-2 rounded">
+                            <option class="text-[15px]">Select your country</option>
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>United Kingdom</option>
+                            <option>Australia</option>
+                            <option>Germany</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <span class="flex flex-wrap gap-4 font-bold">Gender</span>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="inline-flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="gender" value="male"> Male
+                            </label>
+                            <label class="inline-flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="gender" value="female"> Female
+                            </label>
+                            <label class="inline-flex items-center gap-2 cursor-pointer">
+                                <input type="radio" name="gender" value="other"> Other
+                            </label>
+                            <label class="=inline-flex items-center gap-2 cousor-pointer">
+                                <input type="radio" name="gender" value="privates"> Prefer not to say
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="block font-bold">Interests</span>
+                        <div class="flex flex-wrap gap-5">
+                            <label class="inline-flex item-center gap-1 cursor-pointer">
+                                <input type="checkbox" name="Interest" value="technology">Technology
+                            </label>
+                            <label class="inline-flex item-center gap-1 cursor-pointer">
+                                <input type="checkbox" name="interests" value="sports">Sports
+                            </label>
+                            <label class="inline-flex item-center gap-1 cursor-pointer">
+                                <input type="checkbox" name="interests" value="music">Music
+                            </label>
+                            <label class="inline-flex item-center gap-1 cursor-pointer">
+                                <input type="checkbox" name="interests" value="travel">Travel
+                            </label>
+                            <label class="inline-flex item-center gap-1 cursor-pointer">
+                                <input type="checkbox" name="interest" value="reading">Reading
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="flex justify-center">
+                    <button type="register" class="bg-green-500 text-white px-6 py-2.5 rounded hover:bg-green-600 w-full">Register</button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

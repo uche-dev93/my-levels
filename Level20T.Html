@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div>
+        <div class="bg-black text-white flex justify-end gap-8 px-8 py-5 sticky top-0 z-50">
+            <a href="#" class="hover:text-red-300">About</a>
+            <a href="#" class="hover:text-red-300">Projects</a>
+            <a href="#" class="hover:text-red-300">Contact</a>
+        </div>
+        <section id="about" class="bg-gradient-to-br from-blue-600 to-indigo-900 text-white flex flex-col items-center justify-center py-40">
+            <h2 class="text-4xl font-bold ">Hey I'm Uche Amako</h2>
+            <p class="mt-4 text-xl italic opacity-90">a web developer</p>
+        </section>
+
+        <section id="Projects" classs="bg-gray-50 py-15 px-5">
+            <div class=" mb-12 text-center">
+                <h2 class="font-bold text-[45px] p-3 pt-4">These are some of my Projects</h2>
+                <hr class="border-black w-1/2 mt-4 mx-auto">
+            </div>
+
+            <div class="flex flex-wrap gap-8 mb-10">
+                <div class="bg-white w-90 shadow-lg rounded overflow-hidden ml-8">
+                    <div class="justify-center h-48 flex items-center bg-gray-200">
+                        <p class="text-gray-500">Project Image</p>
+                    </div>
+                    <p class="bg-white py-4 font-medium text-center hover:text-red-300">Tribute Page</p>
+                </div>
+
+                <div class="bg-white shadow-lg w-90 rounded overflow-hidden">
+                    <div class="bg-gray-200 h-48 items-center flex justify-center">
+                        <p class="text-gray-500">Project Image</p>
+                    </div>
+                    <P class="bg-white py-4 font-medium text-center hover:text-red-300">Survey Form</P>
+                </div>
+                <div class="bg-white w-90 shadow-lg rounded overflow-hidden">
+                    <div class="justify-center flex h-48 bg-gray-200 items-center">
+                        <p class="text-gray-500">Project Image</p>
+                    </div>
+                    <p class="bg-white font-medium py-4 text-center hover:text-red-300">Product landing Page</p>
+                </div>
+                <div class="w-90 bg-white shadow-lg rounded overflow-hidden ml-8">
+                    <div class="justify-center items-center h-48 flex bg-gray-200">
+                        <p class="text-gray-500">Project Images</p>
+                    </div>
+                    <p class="bg-white py-4 font-medium text-center hover:text-red-300">Technical Documentation</p>
+                </div>
+            </div>
+        </section>
+        <footer id="contact" class="bg-gradient-to-b from-slate-900 to-blue-950 text-white">
+            <div class="flex flex-col items-center justify-center py-24 text-center">
+                <h2 class="font-bold text-4xl">Let's work together...</h2>
+                <p class="italic text-gray-300 mt-3 py-5">How do you take your coffee?</p>
+                <div class="gap-8 mt-8 flex text-m justify-center flex-wrap">
+                    <a href="#" class="hover:text-red-300">Facebook</a>
+                    <a  href="#" class="hover:text-red-300">GitHub</a>
+                    <a  href="#" class="hover:text-red-300">Twitter</a>
+                    <a  href="#" class="hover:text-red-300">Send a mail</a>
+                    <a  href="#" class="hover:text-red-300">Call me</a>
+                </div>
+            </div>
+            <hr class="mx-8 border-orange-500/100 ">
+            <div class="py-8 text-l text-gray-300 text-center">
+                <p>© 2024 Uche Amako. All rights reserved.</p>
+                <p class="mt-1">This is a FreeCodeCamp inspired Portfolio Project.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

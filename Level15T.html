@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Alignment & Spacing Demonstration</title> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-white border m-5">
+        <h1 class=" font-bold text-center py-4 text-[35px]">Text Alignment & Spacing Demonstration</h1>
+        <div class="bg-gray-100 border mx-8 mb-5">
+            <h2 class="font-bold py-4 pl-3 text-[25px]">Text Alignment</h2>
+            <h2 class="font-bold py-1 pl-1">Left Aligned (Default)</h2>
+            <p class="pl-2 p-2">This text is aligned to the left side of the container. This is the default alignment for most languages that read left-to-right.</p>
+            <h2 class="font-bold text-center text-[20px]">Center Aligned</h2>
+            <p class="text-center p-2">This text is centered within its container. Center alignment is often used for headings, titles, and special emphasis.</p>
+            <h2 class="text-right aligned font-bold p-3">Right Aligned</h2>
+            <p class="text-right aligned">This text is aligned to the right side of the container. Right alignment is common for numbers and dates in tables.</p>
+            <h2 class="font-bold p-2">Justified Alignment</h2>
+            <p class="p-4">This text is justified, meaning it stretches to fill the entire width of the container. Justified text creates clean edges on both sides but can sometimes create uneven spacing between words. This is commonly used in newspapers, books, and magazines for a formal appearance.</p>
+        </div>
+        <div class="border bg-gray-100 mx-8 mb-5">
+            <h3 class="font-bold p-3 text-[20px]">Line Height</h3>
+            <h3 class="font-bold p-3">Normal Line Height</h3>
+            <p class="p-3">This paragraph has normal line height. The spacing between lines is determined by the browser's default settings. This text demonstrates how normal line spacing appears in a typical paragraph with multiple lines to show the vertical rhythm of the text.</p>
+            <h2 class="font-bold p-4 text-[19px]">Tight Line Height (1.2)</h2>
+            <p class="p-4">This paragraph has tight line height (1.2 times the font size). The lines are closer together which can be useful for saving space. However, text that is too tightly spaced can become difficult to read, especially with longer paragraphs or smaller font sizes.</p>
+            <h2 class="font-bold text-[19px] p-4 ">Loose Line Height (2.0)</h2>
+            <p class="p-4">This paragraph has loose line height (2.0 times the font size). The increased spacing between lines improves readability and gives a more open, airy feel to the text. This is often used in designs that prioritize readability and accessibility.</p>
+        </div>
+        <div class="bg-gray-100 border mx-8 mb-5">
+            <h2 class="font-bold p-3 text-[20px]">Text Indentation</h2>
+            <h2 class="font-bold p-2 text-[20px]">No Indentation</h2>
+            <p class="p-4">This paragraph has no first line indentation. All lines start at the same position, which is common in web content and digital media where space is limited and readability is prioritized.</p>
+            <h3 class="font-bold text-[20px] pl-7">Standard Indentation (40px)</h3>
+            <p class="p-5"> This paragraph has a standard first line indentation of 40 pixels. The first line is indented while subsequent lines start at the normal margin. This traditional formatting style is common in printed books and formal documents.</p>
+            <h2 class="font-bold p-2 text-[20px] pl-3">Negative Indentation (-20px)</h2>
+            <p class="p-5">This paragraph has a negative first line indentation of -20 pixels with a compensating left margin. The first line extends to the left of the normal text block, creating a hanging indent effect often used in bibliographies and reference lists.</p>
+        </div>
+        <div class="border bg-gray-100 mx-8 mb-5">
+            <h1 class="font-bold p-3 text-[23px]">Letter & Word Spacing</h1>
+            <h2 class="font-bold p-1">Normal Spacing</h2>
+            <p class="p-2">This text has normal letter and word spacing. The distance between characters and words follows the font's default metrics, providing optimal readability for continuous text.</p>
+            <h2 class="font-bold p-3 text-[20px]">Wide Letter Spacing (3px)</h2>
+            <p class="p-3">This text has increased letter spacing of 3 pixels. Wider letter spacing can improve readability for headings, logos, or text in all caps, but may reduce reading speed for body text.</p>
+            <h2 class="font-bold p-3 text-[20px]">Tight Letter Spacing (-1px)</h2>
+            <p class="p-3">This text has reduced letter spacing of -1 pixel. Tighter letter spacing can create a denser, more compact appearance but may reduce legibility if overused.</p>
+            <h2 class="font-bold p-3 text-[20px]">Wide Word Spacing (10px)</h2>
+            <p class="p-4">This text has increased word spacing of 10 pixels. Wider word spacing creates more separation between words which can sometimes improve readability in justified text or specific design contexts.</p>
+            <h2 class="font-bold p-3 text-[20px]">Tight Word Spacing (-2px)</h2>
+            <p class="p-3">This text has reduced word spacing of -2 pixels. Tighter word spacing brings words closer together, which can be useful for fitting more text in limited spaces but may reduce readability.</p>
+        </div>
+        <div class="border bg-gray-100 mx-8">
+            <h2 class="font-bold text-[20px] p-3">Vertical Alignment</h2>
+            <p>Vertical alignment controls how inline and inline-block elements align with surrounding text:</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+</head>
+<body>
+    <h2 class="font-bold text-[20px] p-5">Flex Direction:Row</h2>
+    <div class="border bg-gray-200 flex gap-5 p-4 ml-5 mr-5 border-[3px]">
+        <p class="bg-blue-300 border p-4 border-[blue]">Item 1</p>
+        <p class="bg-blue-300 border p-4 border-[blue]">Item 2</p>
+        <p class="bg-blue-300 border p-4 border-[blue]">Item 3</p>
+    </div>
+    <h2 class="text-[20px] font-bold p-5">Flex Direction: Column</h2>
+    <div class="bg-gray-200 border py-12 ml-5 mr-5 border-[3px]">
+        <p class="bg-blue-300 border p-4 mb-2 mx-3 border-[blue]">Item 1</p>
+        <p class="bg-blue-300 border p-4 mb-2 mx-3 border-[blue]">Item 2</p>
+        <p class="bg-blue-300 border p-4 mx-3 border-[blue]">Item 3</p>
+    </div>
+    <h2 class="font-bold p-5 text-[20px]">Justify Content</h2>
+    <div class="border bg-gray-200 flex p-5 gap-4 ml-5 mr-5 mb-4 border-[3px]">
+        <p class="border bg-blue-200 p-4 border-[blue]">Start</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">Start</p>
+    </div>
+    <div class="mb-4 border flex p-5 gap-4 bg-gray-200 mr-5 ml-5 justify-center border-[3px]">
+        <p class="border bg-blue-200 p-4 border-[blue]">Center</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">Center</p>
+    </div>
+    <div class="border bg-gray-200 p-5 flex gap-4 mb-4 mr-5 ml-5 justify-end border-[3px]">
+        <p class="border bg-blue-200 p-4 border-[blue]">End</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">End</p>
+    </div>
+    <div  class="border bg-gray-200 p-5 flex gap-4 mb-4 mr-5 ml-5 justify-between border-[3px]">
+        <p class="border bg-blue-200 p-4 border-[blue]">Between</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">Between</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">Between</p>
+    </div>
+    <div class="border bg-gray-200 flex p-5 gap-4 mr-5 ml-5 border-[3px]">
+        <p class="border bg-blue-200 p-4 border-[blue]">Around</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">Around</p>
+        <p class="border bg-blue-200 p-4 border-[blue]">Around</p>
+    </div>
+    <h2 class="font-bold p-5  text-[20px]">Align Items</h2>
+    <div class="bg-gray-200 border flex gap-4 mx-5 pt-4 mb-4 pl-4 border-[3px]">
+        <p class="border bg-blue-200  h-14 w-18 text-center pt-4 border-[blue]">Top</p>
+        <p class="border bg-blue-200 p-4 h-25 w-18 mb-1 text-center border-[blue]">Tall</p>
+        <p class="border h-14 w-18 text-center pt-4 bg-blue-200 border-[blue]">Top</p>
+    </div>
+    <div class="bg-gray-200 border flex gap-4 mx-5 mb-4 pl-4 pt-3 border-[3px]">
+        <p class="border bg-blue-200 h-15 w-24 border-[blue] text-center pt-4 mt-5">Center</p>
+        <p class="border bg-blue-200 p-4 border-[blue] h-25 mb-1 w-18">Tall</p>
+        <p class="border bg-blue-200 h-15 w-24 border-[blue] mt-5 text-center pt-4">Center</p>
+    </div>
+    <div class="bg-gray-200 border flex pl-4 gap-4 mx-5 border-[3px]">
+        <p class="border bg-blue-200  h-15 w-24  text-center mt-11 pt-4 border-[blue]">Bottom</p>
+        <p class="border bg-blue-200 p-4 border-[blue] mt-1 mb-3 h-25 w-18">Tall</p>
+        <p class="border bg-blue-200  h-15 w-24 mt-11 text-center pt-4 border-[blue]">Bottom</p>
+    </div>
+    <h2 class="font-bold p-5 text-[20px]">Flex Wrap</h2>
+    <div class="border flex-wrap flex pt-3 border-[3px] h-[250px] gap-3 w-[300px] bg-gray-200 ml-5">
+        <p class="border-[blue]  bg-blue-200 border h-15 ml-4 w-30 pt-4 pl-4">1</p>
+        <p class="border-[blue] border h-15  bg-blue-200 w-30 pt-4 pl-4">2</p>
+        <p class="border-[blue] border h-15 w-30 ml-4  bg-blue-200 pt-4 pl-4">3</p>
+        <p class="border-[blue] border h-15 w-30 bg-blue-200 pt-4 pl-4">4</p>
+        <p class="border-[blue] border h-15 w-30 ml-4 bg-blue-200 pt-4 pl-4">5</p>
+        <p class="border-[blue] border h-15 w-30 bg-blue-200 pt-4 pl-4">6</p>
+    </div>
+    <h2  class="font-bold p-5 text-[20px]">Flex Grow</h2>
+    <div class="border bg-gray-200 p-4 flex gap-4 ml-5 mb-5 border-[3px]">
+        <p class="border bg-blue-300 p-4 grow-1">Grow 1</p>
+        <p class="border bg-blue-300 p-4 grow-2">Grow 2</p>
+        <p class="border border-blue bg-blue-300 p-4">No Grow</p>
+    </div>
+    
+</body>
+</html>

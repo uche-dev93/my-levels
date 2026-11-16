@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-gray-100 h-[1580px]">
+        <h1 class="font-bold text-[35px] pl-30 pt-3 pb-5">CSS Grid Basics</h1>
+        <h2  class="font-bold pb-3 text-[27px] pl-31">Basic 3-Column Grid</h2>
+        <div class="flex flex-wrap justify-center gap-2">
+            <p class="border bg-cyan-200 border-[blue] border-[1px] text-center pt-4 w-50 h-15">Item 1</p>
+            <p class="border bg-cyan-200 border-[blue] border-[1px] text-center pt-4 w-50 h-15">Item 2</p>
+            <p class="border bg-cyan-200 border-[blue] border-[1px] text-center pt-4 w-50 h-15">Item 3</p>
+            <p class="border bg-cyan-200 border-[blue] border-[1px] text-center pt-4 w-50 h-15">Item 4</p>
+            <p class="border bg-cyan-200 border-[blue] border-[1px] text-center pt-4 w-50 h-15">Item 5</p>
+            <p class="border bg-cyan-200 border-[blue] border-[1px] text-center pt-4 w-50 h-15">Item 6</p>
+        </div>
+        
+        <h2 class="font-bold text-[25px] pb-4 pt-5 pl-30">Grid Template Areas</h2>
+        <div class="ml-30 w-256 h-25 bg-red-400">Header</div>
+        <div class="flex gap-2 mt-3 ml-30">
+            <div class="bg-green-300 h-52 w-85">Sidebar</div>
+            <div class="w-169 h-52 bg-yellow-50">Main Content</div>
+        </div>
+         <div class="mt-3 ml-30 w-256 h-21 bg-gray-300">Footer</div>
+        <h2 class="font-bold text-[25px] pl-30 pt-5 pb-3">Grid Column & Row Span</h2>
+        <div class="grid grid-cols-4 ml-30 mr-30 gap-3">
+            <div class="h-21 col-span-2 pt-2 text-center bg-rose-300">Span 2 Columns</div>
+            <div class="h-21 pt-2 text-center bg-rose-300">Item 2</div>
+            <div class="row-span-2 pt-2 text-center bg-rose-300">Span 2 Rows</div>
+            <div  class="row-span-2 pt-2 text-center bg-rose-300">Span 2 Rows</div>
+            <div class="col-span-2 h-21 pt-2 text-center bg-rose-300">Span 2 Columns</div>
+            <div class="h-21 pt-2 text-center bg-rose-300">Item 3</div>
+            <div class="bg-rose-300 text-center col-span-2 pt-2">Span 2 Columns</div>
+        </div>
+        <h1 class="font-bold text-[25px] pl-30 pt-5 pb-3">Auto-Fit Grid</h1>
+        <div class="flex gap-2 text-[17px] flex ml-30">
+            <p class="text-center bg-green-600 p-5 w-full">Auto 1</p>
+            <p class="text-center bg-green-600 p-5 w-full">Auto 2</p>
+            <p class="text-center bg-green-600 p-5 w-full">Auto 3</p>
+            <p class="text-center bg-green-600 p-5 w-full">Auto 4</p>
+            <p class="text-center bg-green-600 p-5 w-full">Auto 5</p>
+            <p class="text-center bg-green-600 p-5 w-full">Auto 6</p>
+        </div>
+        <h1 class="font-bold text-[25px] pl-30 pt-5 pb-3">Grid Alignment</h1>
+        <div class="bg-gray-200 gap-2 mb-10 pb-5 pt-5 pl-5 text-[17px] flex flex-wrap h-60 w-[81px]">
+            <p class="bg-red-300 w-70 mr-15 pt-3 pl-3 h-22">Start</p>
+            <p class="bg-red-300 pt-3 pl-3 w-70 h-22">Center</p>
+            <p class="bg-red-300 pt-3 pl-3 w-70 ml-15 h-22">End</p>
+            <p class="bg-red-300 pl-3 pt-3 w-70 mr-15 h-22">Stretch</p>
+            <p class="bg-red-300 pt-3 pl-3 w-70 h-22">Center</p>
+            <p class="bg-red-300 w-70 ml-7 h-22 pt-3 pl-3">Start</p>
+        </div>
+    </div>
+    
+</body>
+</html>
